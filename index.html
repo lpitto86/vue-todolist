@@ -13,6 +13,7 @@
             <ul>
                   <li v-for="todo in todos" :key="todo.text" :class="{ 'completed': todo.done }">
                         {{ todo.text }}
+                        <span class="remove-btn" @click="removeTodo(todo)">x</span>
                   </li>
             </ul>
       </div>
