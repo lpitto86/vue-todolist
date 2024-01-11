@@ -11,16 +11,13 @@ new Vue({
       },
       methods: {
             addTodo: function() {
-                  if (this.newTodo.trim() !== '') {
-                  this.todos.push({ text: this.newTodo, done: false });
-                  this.newTodo = '';
-                  }
+                if (this.newTodo.trim() !== '') {
+                    this.todos.push({ text: this.newTodo, done: false });
+                    this.newTodo = '';
+                }
             },
-            removeTodo: function(todo) {
-                  const index = this.todos.indexOf(todo);
-                  if (index !== -1) {
-                  this.todos.splice(index, 1);
-                  }
+            removeTodo: function(index) {
+                this.todos.splice(index, 1);
             }
       }
 });
