@@ -7,3 +7,7 @@
   html {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+  .completed {
+    text-decoration: line-through;
+}
